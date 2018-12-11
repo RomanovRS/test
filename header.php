@@ -17,8 +17,6 @@
     <nav class="top-menu">
   	  <ul class="top-menu-list">
               <li><a href="">ГЛАВНАЯ</a></li>
-  			<li><a href="">НОМЕРА</a></li>
-  		    <li><a href="">БРОНИРОВАНИЕ</a></li>
 
               <div class="toplogo"><a href=""><img src="img/logotip.png" width="160"></a></div>
 
