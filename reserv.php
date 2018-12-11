@@ -3,11 +3,11 @@
   <div class="reserv_container">
     <?php 
 
-      $link = mysqli_connect("localhost", "root", "root", "test_database");
+      // $link = mysqli_connect("localhost", "root", "root", "test_database");
 
       mysqli_set_charset($link,'utf8');
 
-        // $link = mysqli_connect("localhost", "uskov_project1_2018_2", "LokzNGLA", "uskov_project1_2018_2");
+        $link = mysqli_connect("localhost", "uskov_project1_2018_2", "LokzNGLA", "uskov_project1_2018_2");
 
             if (!$link) {
                 echo "<p style=\"color=\"red\"\"><i><strong>Ошибка: Невозможно установить соединение с MySQL.</strong></i>" . PHP_EOL;
@@ -159,7 +159,7 @@
      
             for ($i=0; $i <= count($results); $i++) { 
               if ($results[$i]['name'] == $room_name) {
-                if (!empty($_POST) and $adult <= $results[$i]['capacity_adult'] and $child <= $results[$i]['capacity_child']) {
+                if (!empty($_POST)and $adult <= $results[$i]['capacity_adult'] and $child <= $results[$i]['capacity_child']) {
                   // =========  бронирование ========================
                   if ($date_out > $date_in and $date_in >= $today) {
                     $insert_reserv = mysqli_query($link, $SQL_insert_query);
@@ -167,8 +167,6 @@
                   else {
                     if (!empty($_POST)) {
                       echo "Выберите другие даты пребывания <br>";
-                      break;
-
                     }
                     // echo "Выберите другие даты пребывания <br>";
                   // echo "<a href=\"form.php\">Вернуться к форме бронирования</a>";

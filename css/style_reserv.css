@@ -1,0 +1,306 @@
+body {
+margin: 0;
+font-family:'Open Sans', 'century gothic', arial, sans-serif;
+font-size: 16px;
+font-weight:normal;
+}
+
+ul { 
+margin: 0;
+padding: 0;
+} 
+
+h1 {
+	text-align: center;
+}
+h1.lake {
+	font-family: "Apple Chancery";
+	font-size: 40px;
+} 
+h3   {
+	color:#f6a673;
+	font-size: 18px;
+	padding-left: 40px;
+}
+
+.container {
+ max-width:1140px;
+ margin:0 auto;
+ padding: 0 25px;
+ display:flex; 
+ flex-direction: column; /*все элементы в контейнере
+  распологаються в столбик-это about и best */
+}
+.color {
+	color:#f6a673;
+}
+ .header {
+  display: flex;
+  
+}
+
+.top-menu {
+    display: flex; 
+
+}
+
+.top-menu-list {
+	display: flex; 
+	margin:0 auto;
+	width:1140px;
+	justify-content:space-between; /*крайние элементы меню
+	прижимаем  к краю блока    */
+	list-style:none;
+	align-items: center;
+}
+
+.top-menu-list a {
+color:black;
+text-decoration:none;
+
+
+}
+.top-menu-list a:hover {
+	color: #e2a475 ;
+   }
+
+.toplogo {
+	text-align: center;
+	padding:20px 0 20px 0; 
+}
+
+ .logo img {
+    position: absolute;
+    left:500px;
+    z-index: 2
+ }
+
+h2  {
+	text-align: center;
+	
+}
+h2 a {
+  color: #fbfdfd;
+  text-decoration: none;
+}
+
+
+.container-footer {
+ width:1140px;
+ margin:0 auto;
+ display:flex;
+ justify-content: space-between;
+ align-items:center;
+ flex-wrap:wrap;
+}
+
+.footer {
+	background: #041217;
+    display: flex;
+}
+.footer-menu {
+ list-style: none;
+}
+
+.footer-menu a {
+	font-size: 14px;
+	color:#fbfdfd ;
+	text-decoration: none;
+}
+
+.footer-right p { 
+	font-family: "Apple Chancery";
+	color: #fbfdfd;
+}
+.fs,
+.inst,
+.tw,
+.vk
+ {
+	padding-right:10px;
+}
+.year,
+.RN2K {
+	color:#fbfdfd; 
+}
+.footer-left,
+ .logo-social,
+ .footer-right {
+  width: 33.33%;
+  }
+  .logo-social {
+  margin-left: 40px;
+  }
+  .footer-right {
+  	margin-right:-120px; 
+  }
+  .line {
+  	border: 1px solid #fbfdfd;
+  	width: 100%;
+  }
+
+  .red {
+  	color:red;
+  }
+  .social {
+  	padding-bottom: 40px;
+  }
+
+
+/*======================= стили формы обратной связи ==========================*/
+
+.form {
+	width: 550px;
+	height: 430px;
+	background: transparent;
+	outline: none;
+	border: 0;
+	box-shadow: 0 0 15px 0 gray;
+}
+
+.underline {
+	margin: 5px 20px 0;
+	width: 510px;
+	/*height: 40px;*/
+	font: normal 12px 'Open Sans', 'century gothic', arial, sans-serif;
+	background: transparent;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid gray;
+	border-radius: 0;
+	line-height: 1;
+	-webkit-appearance: none;
+}
+
+.form_textarea {
+	margin: 10px 0 0 20px;
+	width: 506px;
+	border: 1px solid gray;
+	outline: none;
+	font: normal 12px 'Open Sans', 'century gothic', arial, sans-serif;
+
+}
+
+.newForm p {
+	margin: 10px 10px 0;
+	font: normal 14px 'Open Sans', 'century gothic', arial, sans-serif;
+}
+
+.btn_send_mail {
+	margin: 20px 0 0 210px;
+	border-radius:2px;
+	background: transparent;
+	width:120px;
+	padding:10px;
+	border: 1px solid #e2a475;
+	/*margin-left: 210px;*/
+	font: normal 11px 'Open Sans', 'century gothic', arial, sans-serif;
+}
+.btn_send_mail:hover {
+	box-shadow: 0 0 10px darkgrey;
+	background-color: #e2a475;
+}
+
+
+
+/*======================= стили формы бронирования ==========================*/
+
+.new_header {
+	display: flex;
+	box-shadow: 0 0 10px darkgrey;
+}
+
+.reserv_container {
+	max-width: 1140px;
+	margin: 20px auto;
+	padding: 0;
+	/*background: lightblue;*/
+}
+
+.form_reserv {
+	width: 500px;
+	margin: 20px auto;
+	/*height: 1450px;*/
+	box-shadow: 0 0 10px darkgrey;
+	background: transparent;
+	outline: none;
+
+}
+
+.form_reserv h2 {
+	margin: 0 auto;
+	padding: 20px 0 40px 0;
+}
+
+.form_reserv p {
+	margin: 10px 5% 0;
+	/*padding: 10px 20px 0;*/
+	font: normal 18px 'Open Sans', 'century gothic', arial, sans-serif;
+}
+
+p.p_small {
+	margin: 10px 5% 0;
+	font: normal 16px 'Open Sans', 'century gothic', arial, sans-serif;
+}
+
+.row_reserv_small {
+	/*margin: 5px 20px 0;*/
+	padding: 0 0 10px 0;
+	width: 100%;
+	/*height: 40px;*/
+	font: normal 16px 'Open Sans', 'century gothic', arial, sans-serif;
+	background: transparent;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #333;
+	border-radius: 0;
+	line-height: 1;
+	-webkit-appearance: none;
+	color: #333;
+}
+
+.row_reserv {
+	/*margin: 5px 20px 0;*/
+	padding: 10px 0 10px 0;
+	width: 100%;
+	/*height: 40px;*/
+	font: normal 16px 'Open Sans', 'century gothic', arial, sans-serif;
+	background: transparent;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #333;
+	border-radius: 0;
+	line-height: 1;
+	-webkit-appearance: none;
+	color: #333;
+}
+
+/*select {
+	display: inline-block;
+	height: 40px;
+}*/
+
+.check_reserv {
+	background: url(img/check.png) no-repeat right;
+}
+
+.btn_reserv {
+	width: 200px;
+	height: 50px;
+	margin: 10px auto 20px;
+	padding: 10px;
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #e2a475;
+	margin-left: 30%;
+	font: normal 18px 'Open Sans', 'century gothic', arial, sans-serif;
+}
+.btn_reserv:hover {
+	box-shadow: 0 0 10px darkgrey;
+	background-color: #e2a475;
+}
+
+
+@media screen and (max-width:1000px)
+
+

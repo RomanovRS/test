@@ -4,10 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Страница бронирования</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style_reserv.css">
 </head>
 <body>
